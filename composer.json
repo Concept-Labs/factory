@@ -1,0 +1,28 @@
+{
+    "name": "concept-labs/factory",
+    "description": "(C)oncept-Labs Cache",
+    "keywords": ["php","factory"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Victor Galitsky",
+            "email": "concept.galitsky@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^7.4|^8.0|^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Concept\\Factory\\": "src/"
+        }
+    },
+    "require-dev": {
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Concept\\Factory\\Test\\": "test/"
+        }
+    }
+
+}
