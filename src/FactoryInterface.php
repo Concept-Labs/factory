@@ -12,23 +12,23 @@ interface FactoryInterface
     /**
      * Create an object
      */
-    public function create(): object;
+    public function create(string $serviceId, ...$parameters): object;
 
-    /**
-     * Set the service id
-     * @param string $serviceId
-     */
-    public function withServiceId(string $serviceId): self;
+    // /**
+    //  * Set the service id
+    //  * @param string $serviceId
+    //  */
+    // public function withServiceId(string $serviceId): self;
 
-    /**
-     * Set the parameters
-     * @param mixed ...$parameters
-     */
-    public function withParameters(...$parameters): self;
+    // /**
+    //  * Set the parameters
+    //  * @param mixed ...$parameters
+    //  */
+    // public function withParameters(...$parameters): self;
 
-    /**
-     * Set the container
-     * @param ContainerInterface $container
-     */
-    public function withContainer(ContainerInterface $container): self;
+    // /**
+    //  * Set the container
+    //  * @param ContainerInterface $container
+    //  */
+    // public function withContainer(ContainerInterface $container): self;
 }
