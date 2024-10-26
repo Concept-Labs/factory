@@ -27,7 +27,7 @@ abstract class AbstractFactory implements FactoryInterface
     /**
      * {@inheritDoc}
      */
-    abstract public function create(): object;
+    abstract public function create(?string $serviceId = null, ...$parameters): object;
 
     /**
      * {@inheritDoc}
